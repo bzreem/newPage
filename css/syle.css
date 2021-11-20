@@ -31,7 +31,9 @@ body {
 
 header {
   height: 100vh;
-  background-image: url("/assets/img/bgHeader.jpg");
+  /*background-image: url("/assets/img/bgHeader.jpg");*/
+  background-image: url("https://bzreem.github.io/newPage/assets/img/bgHeader.jpg"); 
+
   background-position: center;
   background-size: cover;
 }
