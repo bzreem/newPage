@@ -154,7 +154,8 @@ header article p.p-active {
 .bg-information {
   height: 100vh;
   margin-top: var(--media-margin-top);
-  background-image: url("/assets/img/bgInformation.jpg");
+  /*background-image: url("/assets/img/bgInformation.jpg");*/
+  background-image: url("https://bzreem.github.io/newPage/assets/img/bgInformation.jpg"); 
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
