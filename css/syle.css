@@ -1,0 +1,1742 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+:root {
+  --color-bg-main: #faf9f9;
+  --color-text: aliceblue;
+  --color-cursos: #f1f1f1;
+  --media-margin-top: 1.5rem;
+  --media-margin-bootom: 1.5rem;
+  --color-bg-black: #232120;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 100vh;
+  background-image: url("/assets/img/bgHeader.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+header .cover {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  position: relative;
+  left: -20rem;
+  color: var(--color-cursos);
+  opacity: 0;
+}
+
+header h1.h1-active {
+  left: 0;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+h2 {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+header article {
+  width: 85%;
+  margin-top: var(--media-margin-top);
+}
+
+header article p {
+  text-align: center;
+  position: relative;
+  left: 20rem;
+  line-height: 1.7rem;
+  color: var(--color-cursos);
+  font-weight: bold;
+  opacity: 0;
+}
+
+header article p.p-active {
+  left: 0;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+
+.information {
+  margin-top: var(--media-margin-top);
+  text-align: center;
+}
+
+.information article {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+.information article figure {
+  width: 20%;
+  margin: auto;
+  margin-top: var(--media-margin-top);
+}
+
+.information article figure img {
+  width: 100%;
+}
+
+.information article p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  gap: 0.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.cards article {
+  width: 95%;
+  margin-top: var(--media-margin-top);
+  padding: 1.8rem;
+  background-color: var(--color-bg-main);
+  opacity: 0;
+  transition: 0.7s opacity ease-in-out;
+}
+
+.cards article.article-opacity-active {
+  opacity: 1;
+  transition: 0.7s opacity ease-in-out;
+}
+
+.cards article p {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.cards article figure img {
+  width: 100%;
+}
+
+.bg-information {
+  height: 100vh;
+  margin-top: var(--media-margin-top);
+  background-image: url("/assets/img/bgInformation.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.div-opacity {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.div-opacity article blockquote {
+  width: 97%;
+  margin: auto;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  font-weight: bold;
+  color: var(--color-cursos);
+  font-style: italic;
+}
+
+.div-opacity article cite {
+  display: block;
+  text-align: right;
+  padding-right: 2rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.bg-information .div-opacity article figure {
+  width: 30%;
+  margin: auto;
+}
+.bg-information .div-opacity article figure img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+}
+
+.banner-img {
+  margin-top: var(--media-margin-top);
+  width: 100%;
+  background-color: var(--color-bg-main);
+}
+
+.prices {
+  margin-top: var(--media-margin-top);
+}
+
+.prices .h2-margin-botton {
+  margin-bottom: 2rem;
+}
+
+.information-one {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--media-margin-bootom);
+  padding: 0 0.3rem;
+}
+
+.information-one figure img {
+  width: 100%;
+}
+
+.information-one article {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.information-one article p {
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.information-two {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--media-margin-bootom);
+  padding: 0 0.3rem;
+}
+
+.information-two figure img {
+  width: 100%;
+}
+
+.information-two article {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.information-two article p {
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+.black-gallery {
+  margin-top: var(--media-margin-bootom);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  align-content: center;
+  gap: 1rem;
+  height: 100vh;
+  background-color: white;
+  transition: 0.4s background-color ease-in-out;
+}
+
+.black-gallery.active-black {
+  background-color: #000;
+  transition: 0.4s background-color ease-in-out;
+}
+
+.black-gallery article {
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+  border-radius: 1rem;
+}
+
+.black-gallery article.active-article-black {
+  opacity: 1;
+  transform: scale(1);
+  border: none;
+  transition: 4s opacity ease-in, 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article:nth-child(1).active-child {
+  border: 2px solid white;
+  transform: scale(1.2);
+  transition: 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article:nth-child(2).active-child {
+  border: 2px solid white;
+  transform: scale(1.3);
+  transition: 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article:nth-child(3).active-child {
+  border: 2px solid white;
+  transform: scale(1.3);
+  transition: 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article:nth-child(4).active-child {
+  border: 2px solid white;
+  transform: scale(1.3);
+  transition: 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article:nth-child(5).active-child {
+  border: 2px solid white;
+  transform: scale(1.3);
+  transition: 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article:nth-child(6).active-child {
+  border: 2px solid white;
+  transform: scale(1.3);
+  transition: 0.5s transform, border ease-in-out;
+}
+
+.black-gallery article figure {
+  width: 40%;
+  margin: auto;
+}
+
+.black-gallery article figure img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.black-gallery h3 {
+  text-align: center;
+  color: white;
+}
+
+.footer-information {
+  width: 100%;
+  min-height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 0.5rem 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(0.5rem);
+  text-align: center;
+  color: var(--color-cursos);
+  transition: 1s width ease-in-out;
+}
+
+.container-footer-information article span {
+  padding-left: 0.3rem;
+  cursor: pointer;
+}
+
+.container-footer-information article p.p-active {
+  display: none;
+}
+
+.footer-information.span-active {
+  width: 10%;
+  transition: 1s width ease-in-out;
+}
+
+.list {
+  margin-top: var(--media-margin-top);
+}
+
+.container-grid-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--media-margin-top);
+}
+
+.container-grid-list figure {
+  width: 90%;
+  margin: auto;
+}
+
+.container-grid-list figure img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container-grid-list article {
+  width: 97%;
+}
+
+.container-grid-list article p {
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+}
+
+.position-fixed-img {
+  background-color: #000;
+  color: white;
+  margin-top: var(--media-margin-top);
+}
+
+.container-position-fixed article {
+  width: 95%;
+  margin: auto;
+  margin-top: var(--media-margin-top);
+}
+
+.container-position-fixed article p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.9rem;
+}
+
+.position-fixed-img figure {
+  width: 95%;
+  margin: auto;
+  margin-top: var(--media-margin-top);
+}
+
+.position-fixed-img figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  object-fit: contain;
+}
+
+.position-fixed-img .div-container-p {
+  width: 95%;
+  margin: auto;
+  margin-top: var(--media-margin-top);
+}
+
+.position-fixed-img .p-italic {
+  margin-top: var(--media-margin-top);
+  text-align: center;
+  line-height: 1.8rem;
+  font-style: italic;
+}
+
+.more {
+  display: block;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.position-fixed-img h2 {
+  transform: translateX(-100rem);
+}
+
+.position-fixed-img h2.active-h2-translate {
+  transform: translateX(0);
+  transition: 1s transform ease-in-out;
+}
+
+.container-position-fixed article p {
+  transform: translateX(100rem);
+}
+
+.container-position-fixed article p.active-p-translate {
+  transform: translateX(0);
+  transition: 1s transform ease-in-out;
+}
+
+.container-position-fixed figure img {
+  opacity: 0;
+}
+
+.container-position-fixed figure img.active-img-translate {
+  opacity: 1;
+  transition: 3s opacity ease-in-out;
+}
+.search-information-nasa {
+  margin-top: var(--media-margin-top);
+}
+
+.search-information-nasa form {
+  width: 100%;
+  text-align: center;
+}
+
+.search-information-nasa form input {
+  display: block;
+  margin: auto;
+  margin-top: var(--media-margin-top);
+  text-align: center;
+  outline: none;
+}
+
+.search-information-nasa form input[type="text"] {
+  padding: 0.5rem;
+  width: 50%;
+  border: none;
+  border-bottom: 0.1rem solid black;
+  font-size: 0.7rem;
+}
+
+.search-information-nasa form input[type="submit"] {
+  padding: 0.5rem;
+  width: 20%;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+}
+
+.lds-ring {
+  display: none;
+  margin: auto;
+  margin-top: 3rem;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gallery-image-nasa {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.gallery-image-nasa.error-search {
+  background-color: red;
+  color: white;
+}
+
+.section-video {
+  margin-top: var(--media-margin-top);
+}
+
+.section-video h2 span {
+  display: block;
+  margin-top: 0.7rem;
+}
+
+.section-video h2 .first-span {
+  opacity: 0;
+}
+
+.section-video h2 .second-span {
+  opacity: 0;
+}
+
+.section-video h2 .first-span.first-active-span {
+  opacity: 1;
+  transition: 1s opacity ease-in-out;
+}
+
+.section-video h2 .second-span.second-active-span {
+  opacity: 1;
+  transition: 1s opacity ease-in-out;
+}
+
+.section-video .information-title {
+  width: 90%;
+  margin: auto;
+  margin-top: var(--media-margin-top);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #86868b;
+  opacity: 0;
+}
+
+.section-video .information-title.active-title-video {
+  opacity: 1;
+  transition: 1s opacity ease-in-out;
+}
+
+.section-video figure {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 98;
+  opacity: 0;
+}
+
+.section-video figure.active-figure-video {
+  opacity: 1;
+  transition: 1s opacity ease-in-out;
+}
+
+.section-video figure video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.information-video {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 97;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.information-video article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.information-video .text {
+  width: 60%;
+  margin: auto;
+}
+
+.information-video .buttons {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.information-video .buttons button {
+  padding: 0.3rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: white;
+}
+
+.information-video .buttons .second-boton {
+  background-color: transparent;
+  color: white;
+  border: 0.1rem solid white;
+}
+
+.information-video article h2 {
+  padding: 0;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.cards-footer {
+  margin-top: var(--media-margin-top);
+}
+
+.container-cards-footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 1.3rem;
+  width: 95%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.container-cards-footer .container-card-a {
+  width: 95%;
+  height: 200px;
+  margin: auto;
+  padding: 1.6rem 1.9rem;
+  border-radius: 0.85rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-card h4 {
+  font-size: 1.3rem;
+}
+
+.header-card figure {
+  width: 9%;
+}
+
+.header-card img {
+  width: 100%;
+}
+
+.container-cards-footer article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: var(--media-margin-top);
+  width: 70%;
+}
+
+.container-cards-footer h3 {
+  font-size: 1.5rem;
+}
+
+.container-cards-footer span {
+  margin-top: 0.9rem;
+}
+.container-cards-footer .first-card {
+  background-color: #dad6cb;
+}
+
+.container-cards-footer .second-card {
+  color: white;
+  background-color: #0071e3;
+}
+
+.container-cards-footer .third-card {
+  color: white;
+  background-color: #1d1d1f;
+}
+.gallery-image-nasa article figure img {
+  width: 100%;
+}
+
+.section-powered {
+  margin-top: var(--media-margin-top);
+  background-color: #000;
+  color: white;
+}
+
+.section-powered-container-grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  height: 200px;
+  font-family: "Courgette", cursive;
+}
+
+.section-powered-container-grid article {
+  padding: 1rem;
+}
+
+.section-powered-container-grid article p {
+  text-align: center;
+  font-size: 1.3rem;
+  opacity: 0;
+}
+
+.section-powered-container-grid .html-styles-bg p.active-html {
+  opacity: 1;
+  transition: 2s opacity ease-in-out;
+}
+
+.section-powered-container-grid .css-styles-bg p.active-css {
+  opacity: 1;
+  transition: 5s opacity ease-in-out;
+}
+
+.section-powered-container-grid .align-javascript p.active-js {
+  opacity: 1;
+  transition: 7s opacity ease-in;
+}
+
+.section-powered-container-grid .align-javascript {
+  align-self: flex-start;
+}
+
+footer {
+  margin-top: var(--media-margin-top);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  display: inline;
+  text-align: center;
+  width: 9%;
+}
+
+footer a img {
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  header article p {
+    text-align: center;
+    position: relative;
+    left: 20rem;
+    font-size: 1.2rem;
+    color: var(--color-cursos);
+    font-weight: bold;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  header article p {
+    font-size: 1.5rem;
+  }
+  .container-cards-footer {
+    width: 80%;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 85%;
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 416px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+
+  .div-opacity article blockquote {
+    width: 95%;
+  }
+
+  .container-grid-list article {
+    width: 92%;
+  }
+
+  .container-grid-list article p {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+  }
+
+  .black-gallery article figure {
+    width: 70%;
+  }
+
+  .search-information-nasa form input[type="text"] {
+    font-size: 0.9rem;
+  }
+
+  .search-information-nasa form input[type="submit"] {
+    padding: 0.5rem;
+    width: 20%;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+  }
+
+  .section-video .information-title {
+    font-size: 1.4rem;
+  }
+
+  .information-video .buttons button {
+    padding: 0.4rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: white;
+  }
+
+  .information-video article h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 421px) {
+  header article {
+    width: 80%;
+  }
+
+  header article p {
+    line-height: 1.9rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+
+  .cards article {
+    width: 90%;
+    padding: 1.8rem;
+
+  }
+  
+  .cards article p {
+    font-size: 1rem;
+  }
+  
+  
+  .container-cards-footer .container-card-a {
+    width: 92%;
+    height: 215px;
+  }
+  .container-cards-footer span {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  header h1 {
+    font-size: 3.9rem;
+  }
+
+  header article {
+    width: 75%;
+  }
+
+  header article p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  h2 {
+    font-size: 2.55rem;
+  }
+
+
+  .cards {
+    width: 85%;
+  }
+
+  
+
+  .information article {
+    width: 77%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .information article p {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+
+  .cards article p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .div-opacity article blockquote {
+    width: 90%;
+  }
+
+  .information-one article p {
+    font-size: 1.14rem;
+  }
+
+  .information-two article p {
+    font-size: 1.14rem;
+  }
+
+  .container-grid-list article p {
+    font-size: 1.14rem;
+    line-height: 1.8rem;
+  }
+
+  .container-position-fixed article {
+    width: 90%;
+  }
+
+  .container-position-fixed article p {
+    font-size: 1.14rem;
+    line-height: 2.2rem;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 90%;
+  }
+
+  .container-position-fixed .p-italic {
+    font-size: 1.14rem;
+    line-height: 2.2rem;
+  }
+
+  footer a {
+    display: inline;
+    text-align: center;
+    width: 7%;
+  }
+}
+
+@media screen and (min-width: 526px) {
+  .container-cards-footer .container-card-a {
+    width: 92%;
+    height: 270px;
+  }
+  .container-cards-footer span {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header h1 {
+    font-size: 4.2rem;
+  }
+
+  header article {
+    width: 70%;
+  }
+
+  header article p {
+    line-height: 2.4rem;
+  }
+
+  .information article {
+    width: 60%;
+  }
+
+  .information article p {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  .div-opacity article blockquote {
+    width: 85%;
+  }
+
+  .container-position-fixed article {
+    width: 85%;
+  }
+
+  .container-position-fixed article p {
+    line-height: 2.5rem;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 85%;
+  }
+
+  .container-position-fixed .p-italic {
+    line-height: 2.5rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    padding: 1.6rem 1.9rem;
+  }
+}
+
+@media screen and (min-width: 632px) {
+  header article p {
+    font-size: 1.6rem;
+  }
+
+  header article {
+    width: 65%;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  .cards {
+    width: 80%;
+  }
+
+  .information-one article {
+    width: 80%;
+  }
+
+  .information-one article p {
+    line-height: 2rem;
+  }
+  .information-two article {
+    width: 80%;
+  }
+
+  .information-two article p {
+    line-height: 2rem;
+  }
+
+  .black-gallery article figure {
+    width: 100%;
+  }
+
+  .container-grid-list article {
+    width: 90%;
+  }
+
+  .container-grid-list article p {
+    line-height: 2.3rem;
+  }
+
+  .section-powered-container-grid article p {
+    font-size: 1.4rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 97%;
+    height: 250px;
+    margin: auto;
+    padding: 1.6rem 1.9rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header h1 {
+    font-size: 4.7rem;
+  }
+
+  header article {
+    width: 55%;
+  }
+
+  header article p {
+    line-height: 2.6rem;
+  }
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  
+  .information article {
+    width: 50%;
+  }
+
+  .information article p {
+    font-size: 1.9rem;
+    line-height: 3rem;
+  }
+
+  .cards article p {
+    font-size: 1.3rem;
+  }
+
+  .div-opacity article blockquote {
+    width: 80%;
+  }
+
+  .information-one article p {
+    font-size: 1.25rem;
+  }
+
+  .information-two article p {
+    font-size: 1.25rem;
+  }
+
+  .black-gallery article h3 {
+    font-size: 2rem;
+  }
+
+  .container-position-fixed article {
+    width: 70%;
+  }
+
+  .container-position-fixed article p {
+    line-height: 2.5rem;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 70%;
+  }
+
+  .container-position-fixed .p-italic {
+    line-height: 2.9rem;
+  }
+
+  .search-information-nasa form input[type="text"] {
+    font-size: 1rem;
+  }
+
+  .section-powered-container-grid {
+    width: 70%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .section-video .information-title {
+    width: 85%;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .information-video .buttons button {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .information-video article h2 {
+    font-size: 2rem;
+  }
+
+  footer a {
+    width: 5.5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  header article {
+    width: 50%;
+  }
+
+  .div-opacity article blockquote {
+    width: 75%;
+  }
+  .information-one article {
+    width: 62%;
+  }
+
+  .information-one article p {
+    line-height: 2.5rem;
+  }
+  .information-two article {
+    width: 62%;
+  }
+
+  .information-two article p {
+    line-height: 2.5rem;
+  }
+  .container-grid-list article {
+    width: 85%;
+  }
+
+  .container-grid-list article p {
+    line-height: 2.7rem;
+  }
+
+  .container-position-fixed article {
+    width: 65%;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 65%;
+  }
+
+  footer a {
+    width: 5%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header article {
+    width: 40%;
+  }
+
+  header article p {
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  h2 {
+    font-size: 2.9rem;
+  }
+  .div-opacity article blockquote {
+    width: 70%;
+  }
+  .container-cards-footer .container-card-a {
+    width: 90%;
+    height: 250px;
+  }
+
+  .container-cards-footer span {
+    margin-top: 1.5rem;
+  }
+
+  footer a {
+    width: 4.5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header h1 {
+    font-size: 4.9rem;
+  }
+
+  header article {
+    width: 60%;
+  }
+
+  header article p {
+    line-height: 3.5rem;
+  }
+
+  header article p {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  .information article p {
+    font-size: 1.7rem;
+  }
+
+  .cards article p {
+    font-size: 1.7rem;
+  }
+
+  .div-opacity article blockquote {
+    width: 67%;
+    font-size: 2.5rem;
+    line-height: 4.3rem;
+  }
+
+  .div-opacity article cite {
+    font-size: 1.6rem;
+  }
+
+  .information-one {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .information-one figure {
+    width: 50%;
+  }
+
+  .information-one figure img {
+    border-radius: 1.2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .information-one article {
+    width: 40%;
+    margin: 0;
+  }
+
+  .information-one article p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  .information-two {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .information-two figure {
+    width: 50%;
+  }
+
+  .information-two figure img {
+    border-radius: 1.2rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .information-two article {
+    width: 40%;
+    margin: 0;
+  }
+
+  .information-two article p {
+    font-size: 1.4rem;
+    line-height: 3rem;
+  }
+
+  .black-gallery {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 3rem;
+  }
+
+  .container-grid-list article {
+    width: 80%;
+  }
+
+  .container-grid-list article p {
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+  }
+
+  .container-position-fixed article p {
+    font-size: 1.4rem;
+  }
+
+  .container-position-fixed .p-italic {
+    font-size: 1.4rem;
+  }
+
+  .container-position-fixed figure {
+    margin-top: var(--media-margin-top);
+  }
+
+  .search-information-nasa form input[type="text"] {
+    font-size: 1.2rem;
+  }
+
+  .section-powered-container-grid article p {
+    font-size: 1.6rem;
+  }
+
+  .section-powered-container-grid {
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 90%;
+    height: 250px;
+  }
+
+  footer a {
+    width: 3.5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header article {
+    width: 55%;
+  }
+
+  header article p {
+    line-height: 3.5rem;
+  }
+
+  .information article {
+    width: 40%;
+  }
+
+  .information article p {
+    font-size: 2.1rem;
+    line-height: 3.5rem;
+  }
+  .information article figure {
+    width: 10%;
+  }
+  .cards figure {
+    width: 70%;
+    margin: auto;
+  }
+
+  .information-one article p {
+    font-size: 1.5rem;
+  }
+
+  .information-two article p {
+    font-size: 1.5rem;
+  }
+
+  .container-position-fixed article {
+    width: 55%;
+  }
+
+  .position-fixed-img figure {
+    width: 98%;
+    height: 500px;
+  }
+
+  .container-position-fixed article p {
+    line-height: 2.9rem;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 55%;
+  }
+
+  .section-video .information-title {
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+  }
+
+  .section-video figure {
+    height: 500px;
+  }
+
+  .information-video .buttons button {
+    font-size: 1.6rem;
+  }
+
+  .information-video article h2 {
+    font-size: 2.6rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 96%;
+    height: 290px;
+  }
+
+  .container-cards-footer span {
+    margin-top: 3.2rem;
+  }
+
+  footer a {
+    width: 3.3%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3.4rem;
+  }
+
+  .information article p {
+    font-size: 2.3rem;
+    line-height: 4rem;
+  }
+  .container-position-fixed article {
+    width: 45%;
+  }
+
+  .container-position-fixed article p {
+    line-height: 3.2rem;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 45%;
+  }
+
+  .container-position-fixed .p-italic {
+    line-height: 3.2rem;
+  }
+
+  .section-video .information-title {
+    width: 65%;
+    font-size: 1.9rem;
+    line-height: 2.9rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 90%;
+    height: 290px;
+  }
+
+  footer a {
+    width: 3%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  header article {
+    width: 50%;
+  }
+
+  header article p {
+    line-height: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .information article {
+    width: 39%;
+  }
+
+  .information article p {
+    font-size: 2.7rem;
+    line-height: 5rem;
+  }
+
+  .div-opacity article blockquote {
+    width: 65%;
+    font-size: 2.5rem;
+    line-height: 5rem;
+  }
+  .information-one figure {
+    width: 40%;
+  }
+
+  .information-one article p {
+    font-size: 1.6rem;
+  }
+
+  .information-two figure {
+    width: 40%;
+  }
+
+  .information-two article p {
+    font-size: 1.6rem;
+  }
+
+  .container-grid-list figure {
+    width: 70%;
+  }
+
+  .container-grid-list article {
+    width: 75%;
+  }
+
+  .container-grid-list article p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+  }
+
+  .container-position-fixed article {
+    width: 40%;
+  }
+
+  .container-position-fixed article p {
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+  }
+
+  .position-fixed-img figure {
+    width: 100%;
+    height: 650px;
+  }
+
+  .position-fixed-img .div-container-p {
+    width: 40%;
+  }
+
+  .container-position-fixed .p-italic {
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+  }
+
+  .search-information-nasa form input[type="text"] {
+    font-size: 1.4rem;
+  }
+
+  .search-information-nasa form input[type="submit"] {
+    font-size: 1.4rem;
+  }
+
+  .section-video figure {
+    height: 700px;
+  }
+
+  .information-video .buttons button {
+    font-size: 1.7rem;
+  }
+
+  .information-video article .text {
+    width: 50%;
+  }
+
+  .information-video article h2 {
+    font-size: 2.8rem;
+  }
+
+  .section-powered-container-grid article p {
+    font-size: 1.7rem;
+  }
+
+  .section-powered-container-grid {
+    width: 50%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 85%;
+    height: 290px;
+  }
+
+  .container-cards-footer span {
+    margin-top: 4rem;
+  }
+
+  footer a {
+    width: 2.5%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  header h1 {
+    font-size: 5.2rem;
+  }
+
+  header article {
+    width: 45%;
+  }
+
+  header article p {
+    font-size: 2.2rem;
+    line-height: 4.5rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 80%;
+    height: 280px;
+  }
+  .container-cards-footer span {
+    margin-top: 4.4rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  header h1 {
+    font-size: 5.5rem;
+  }
+
+  header article p {
+    font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 3.6rem;
+  }
+  .cards figure {
+    width: 50%;
+  }
+
+  .information-one article p {
+    font-size: 1.8rem;
+  }
+
+  .information-two article p {
+    font-size: 1.8rem;
+  }
+
+  .container-grid-list figure {
+    width: 60%;
+  }
+
+  .container-grid-list article {
+    width: 65%;
+  }
+
+  .container-grid-list article p {
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+  }
+
+  .container-cards-footer .container-card-a {
+    width: 70%;
+    height: 300px;
+  }
+  .container-cards-footer span {
+    margin-top: 5.5rem;
+  }
+}
