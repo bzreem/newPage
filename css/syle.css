@@ -184,6 +184,7 @@ header article p.p-active {
   text-align: right;
   padding-right: 2rem;
   margin-top: 2rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -589,11 +590,12 @@ header article p.p-active {
 }
 
 .section-video .information-title {
-  width: 90%;
+  width: 87%;
   margin: auto;
   margin-top: var(--media-margin-top);
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  line-height: 1.5rem;
   text-align: center;
   color: #86868b;
   opacity: 0;
@@ -831,6 +833,10 @@ footer a img {
     width: 85%;
     height: 200px;
   }
+
+  .section-video .information-title {
+    line-height: 2rem;
+  }
 }
 
 @media screen and (min-width: 416px) {
@@ -987,6 +993,10 @@ footer a img {
     line-height: 2.2rem;
   }
 
+  .section-video .information-title {
+    width: 82%;
+  }
+
   footer a {
     display: inline;
     text-align: center;
@@ -1039,6 +1049,13 @@ footer a img {
     width: 85%;
   }
 
+  .div-opacity article cite {
+    padding-right: 2.2rem;
+    font-size: 1.6rem;
+  }
+
+  
+
   .container-position-fixed article {
     width: 85%;
   }
@@ -1053,6 +1070,11 @@ footer a img {
 
   .container-position-fixed .p-italic {
     line-height: 2.5rem;
+  }
+
+  .section-video .information-title {
+    width: 75%;
+    line-height: 2.3rem;
   }
 
   .container-cards-footer .container-card-a {
@@ -1154,6 +1176,11 @@ footer a img {
     width: 80%;
   }
 
+  .div-opacity article cite {
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+
   .information-one article p {
     font-size: 1.25rem;
   }
@@ -1193,10 +1220,11 @@ footer a img {
   }
 
   .section-video .information-title {
-    width: 85%;
+    width: 75%;
     font-size: 1.6rem;
     line-height: 2.5rem;
   }
+
 
   .information-video .buttons button {
     padding: 0.7rem;
@@ -1259,6 +1287,12 @@ footer a img {
     width: 65%;
   }
 
+  .section-video .information-title {
+    width: 70%;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+  }
+
   footer a {
     width: 5%;
   }
@@ -1279,6 +1313,12 @@ footer a img {
   }
   .div-opacity article blockquote {
     width: 70%;
+  }
+
+  .section-video .information-title {
+    width: 65%;
+    font-size: 1.9rem;
+    line-height: 2.9rem;
   }
   .container-cards-footer .container-card-a {
     width: 90%;
@@ -1330,8 +1370,10 @@ footer a img {
     line-height: 4.3rem;
   }
 
+
   .div-opacity article cite {
-    font-size: 1.6rem;
+    padding-right: 4rem;
+    font-size: 2.2rem;
   }
 
   .information-one {
@@ -1486,9 +1528,12 @@ footer a img {
     width: 55%;
   }
 
+
+
   .section-video .information-title {
+    width: 56%;
     font-size: 1.9rem;
-    line-height: 2.7rem;
+    line-height: 2.9rem;
   }
 
   .section-video figure {
@@ -1535,6 +1580,12 @@ footer a img {
     font-size: 2.8rem;
     line-height: 5.2rem;
   }
+
+  
+  .div-opacity article cite {
+    padding-right: 5rem;
+    font-size: 2.5rem;
+  }
   .container-position-fixed article {
     width: 45%;
   }
@@ -1551,10 +1602,11 @@ footer a img {
     line-height: 3.2rem;
   }
 
+ 
   .section-video .information-title {
-    width: 65%;
+    width: 52%;
     font-size: 1.9rem;
-    line-height: 2.9rem;
+    line-height: 3.2rem;
   }
 
   .container-cards-footer .container-card-a {
@@ -1588,7 +1640,6 @@ footer a img {
     font-size: 2.7rem;
     line-height: 5rem;
   }
-
 
   .div-opacity article blockquote {
     width: 65%;
@@ -1655,6 +1706,12 @@ footer a img {
     font-size: 1.4rem;
   }
 
+  .section-video .information-title {
+    width: 45%;
+    font-size: 1.9rem;
+    line-height: 3.5rem;
+  }
+
   .section-video figure {
     height: 700px;
   }
@@ -1714,6 +1771,13 @@ footer a img {
     line-height: 5.8rem;
   }
 
+  
+  .div-opacity article cite {
+    padding-right: 5.5rem;
+    font-size: 2.5rem;
+  }
+
+
 
   .container-cards-footer .container-card-a {
     width: 80%;
@@ -1737,13 +1801,12 @@ footer a img {
     font-size: 3.6rem;
   }
   .cards figure {
-    width: 50%;
+    width: 68%;
   }
 
-
   .cards .container-p-cards {
-      width: 80%;
-      margin: auto;
+    width: 80%;
+    margin: auto;
   }
 
   .div-opacity article blockquote {
@@ -1751,6 +1814,11 @@ footer a img {
     line-height: 6rem;
   }
 
+    
+  .div-opacity article cite {
+    padding-right: 6rem;
+    font-size: 2.8rem;
+  }
 
   .information-one article p {
     font-size: 1.8rem;
@@ -1770,6 +1838,12 @@ footer a img {
 
   .container-grid-list article p {
     font-size: 1.8rem;
+    line-height: 3.8rem;
+  }
+
+  .section-video .information-title {
+    width: 49%;
+    font-size: 2rem;
     line-height: 3.8rem;
   }
 
