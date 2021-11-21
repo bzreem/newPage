@@ -896,18 +896,15 @@ footer a img {
     font-size: 2.4rem;
   }
 
-
   .cards article {
     width: 90%;
     padding: 1.8rem;
-
   }
-  
+
   .cards article p {
     font-size: 1rem;
   }
-  
-  
+
   .container-cards-footer .container-card-a {
     width: 92%;
     height: 215px;
@@ -935,12 +932,9 @@ footer a img {
     font-size: 2.55rem;
   }
 
-
   .cards {
     width: 85%;
   }
-
-  
 
   .information article {
     width: 77%;
@@ -1001,6 +995,15 @@ footer a img {
 }
 
 @media screen and (min-width: 526px) {
+  .cards {
+    width: 80%;
+  }
+
+  .cards article p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
   .container-cards-footer .container-card-a {
     width: 92%;
     height: 270px;
@@ -1074,7 +1077,12 @@ footer a img {
   }
 
   .cards {
-    width: 80%;
+    width: 75%;
+  }
+
+  .cards article p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
   }
 
   .information-one article {
@@ -1133,7 +1141,6 @@ footer a img {
     font-size: 2.7rem;
   }
 
-  
   .information article {
     width: 50%;
   }
@@ -1141,10 +1148,6 @@ footer a img {
   .information article p {
     font-size: 1.9rem;
     line-height: 3rem;
-  }
-
-  .cards article p {
-    font-size: 1.3rem;
   }
 
   .div-opacity article blockquote {
@@ -1212,6 +1215,15 @@ footer a img {
 @media screen and (min-width: 800px) {
   header article {
     width: 50%;
+  }
+
+  .cards {
+    width: 70%;
+  }
+
+  .cards article p {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .div-opacity article blockquote {
@@ -1308,7 +1320,8 @@ footer a img {
   }
 
   .cards article p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
   }
 
   .div-opacity article blockquote {
@@ -1444,7 +1457,7 @@ footer a img {
     width: 10%;
   }
   .cards figure {
-    width: 70%;
+    width: 75%;
     margin: auto;
   }
 
@@ -1513,6 +1526,15 @@ footer a img {
     font-size: 2.3rem;
     line-height: 4rem;
   }
+  .cards article p {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+
+  .div-opacity article blockquote {
+    font-size: 2.8rem;
+    line-height: 5.2rem;
+  }
   .container-position-fixed article {
     width: 45%;
   }
@@ -1567,10 +1589,11 @@ footer a img {
     line-height: 5rem;
   }
 
+
   .div-opacity article blockquote {
     width: 65%;
-    font-size: 2.5rem;
-    line-height: 5rem;
+    font-size: 3rem;
+    line-height: 5.5rem;
   }
   .information-one figure {
     width: 40%;
@@ -1686,6 +1709,12 @@ footer a img {
     line-height: 4.5rem;
   }
 
+  .div-opacity article blockquote {
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+  }
+
+
   .container-cards-footer .container-card-a {
     width: 80%;
     height: 280px;
@@ -1710,6 +1739,18 @@ footer a img {
   .cards figure {
     width: 50%;
   }
+
+
+  .cards .container-p-cards {
+      width: 80%;
+      margin: auto;
+  }
+
+  .div-opacity article blockquote {
+    font-size: 3.5rem;
+    line-height: 6rem;
+  }
+
 
   .information-one article p {
     font-size: 1.8rem;
