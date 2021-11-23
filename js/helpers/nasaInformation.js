@@ -33,7 +33,7 @@ export default async function nasaInformation() {
             let $img = d.createElement("img");
             $img.src = message.collection.items[i].links
               ? message.collection.items[i].links[0].href
-              : "/assets/img/no-image.png";
+              : "https://bzreem.github.io/newPage/assets/img/no-image.png"; 
             $figure.appendChild($img);
             $article.appendChild($figure);
             $fragment.appendChild($article);
