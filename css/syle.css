@@ -325,12 +325,216 @@ header article p.p-active {
 .black-gallery article figure {
   width: 40%;
   margin: auto;
+  position: relative;
 }
+
+.info-first-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.info-first-img article h3{
+  margin-top: var(--media-margin-top);
+}
+
+
+.info-second-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.info-second-img article h3{
+  margin-top: var(--media-margin-top);
+}
+
+.info-third-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.info-third-img article h3{
+  margin-top: var(--media-margin-top);
+}
+
+.info-fourth-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.info-fourth-img article h3{
+  margin-top: var(--media-margin-top);
+}
+
+
+.info-fifth-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.info-fifth-img article h3{
+  margin-top: var(--media-margin-top);
+}
+
+.info-sixth-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: visibility 0.5s, opacity 0.5s ease;
+}
+
+.info-sixth-img article h3{
+  margin-top: var(--media-margin-top);
+}
+
+
+
+.info-first-img.active-img-information {
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity ease;
+}
+
+.info-second-img.active-img-information {
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity ease;
+}
+
+.info-third-img.active-img-information {
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity ease;
+}
+
+.info-fourth-img.active-img-information {
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity ease;
+}
+
+.info-fifth-img.active-img-information {
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity ease;
+}
+
+
+.info-sixth-img.active-img-information {
+  z-index: 30;
+  opacity: 1;
+  visibility: visible;
+  transition: 2s opacity ease;
+}
+
 
 .black-gallery article figure img {
   width: 100%;
   border-radius: 1rem;
+  cursor: pointer;
+  transform: rotateY(0deg);
+  transition: 1s transform ease;
 }
+
+.black-gallery article figure .black-gallery-first-child.active-rotate {
+  transform: rotateY(180deg);
+  transition: 1s transform ease;
+}
+
+.black-gallery article figure .black-gallery-second-child.active-rotate {
+  transform: rotateY(180deg);
+  transition: 1s transform ease;
+}
+
+.black-gallery article figure .black-gallery-third-child.active-rotate {
+  transform: rotateY(180deg);
+  transition: 1s transform ease;
+}
+
+
+.black-gallery article figure .black-gallery-fourth-child.active-rotate {
+  transform: rotateY(180deg);
+  transition: 1s transform ease;
+}
+
+.black-gallery article figure .black-gallery-fifth-child.active-rotate {
+  transform: rotateY(180deg);
+  transition: 1s transform ease;
+}
+
+.black-gallery article figure .black-gallery-sixth-child.active-rotate {
+  transform: rotateY(180deg);
+  transition: 1s transform ease;
+}
+
 
 .black-gallery h3 {
   text-align: center;
@@ -659,6 +863,7 @@ header article p.p-active {
   border: none;
   border-radius: 0.3rem;
   background-color: white;
+  cursor: pointer;
 }
 
 .information-video .buttons .second-boton {
@@ -733,17 +938,39 @@ header article p.p-active {
 }
 .container-cards-footer .first-card {
   background-color: #dad6cb;
+  opacity: 1;
+  transition: 0.5s opacity ease;
+}
+
+.container-cards-footer .first-card:hover {
+  opacity: 0.8;
+  transition: 0.5s opacity ease;
 }
 
 .container-cards-footer .second-card {
   color: white;
   background-color: #0071e3;
+  opacity: 1;
+  transition: 0.5s opacity ease;
+}
+
+.container-cards-footer .second-card:hover {
+  opacity: 0.8;
+  transition: 0.5s opacity ease;
 }
 
 .container-cards-footer .third-card {
   color: white;
   background-color: #1d1d1f;
+  opacity: 1;
+  transition: 0.5s opacity ease;
 }
+
+.container-cards-footer .third-card:hover {
+  opacity: 0.9;
+  transition: 0.5s opacity ease;
+}
+
 .gallery-image-nasa article figure img {
   width: 100%;
 }
@@ -1054,8 +1281,6 @@ footer a img {
     font-size: 1.6rem;
   }
 
-  
-
   .container-position-fixed article {
     width: 85%;
   }
@@ -1225,7 +1450,6 @@ footer a img {
     line-height: 2.5rem;
   }
 
-
   .information-video .buttons button {
     padding: 0.7rem;
     font-size: 1rem;
@@ -1369,7 +1593,6 @@ footer a img {
     font-size: 2.5rem;
     line-height: 4.3rem;
   }
-
 
   .div-opacity article cite {
     padding-right: 4rem;
@@ -1528,8 +1751,6 @@ footer a img {
     width: 55%;
   }
 
-
-
   .section-video .information-title {
     width: 56%;
     font-size: 1.9rem;
@@ -1581,7 +1802,6 @@ footer a img {
     line-height: 5.2rem;
   }
 
-  
   .div-opacity article cite {
     padding-right: 5rem;
     font-size: 2.5rem;
@@ -1602,7 +1822,6 @@ footer a img {
     line-height: 3.2rem;
   }
 
- 
   .section-video .information-title {
     width: 52%;
     font-size: 1.9rem;
@@ -1771,13 +1990,10 @@ footer a img {
     line-height: 5.8rem;
   }
 
-  
   .div-opacity article cite {
     padding-right: 5.5rem;
     font-size: 2.5rem;
   }
-
-
 
   .container-cards-footer .container-card-a {
     width: 80%;
@@ -1814,7 +2030,6 @@ footer a img {
     line-height: 6rem;
   }
 
-    
   .div-opacity article cite {
     padding-right: 6rem;
     font-size: 2.8rem;
