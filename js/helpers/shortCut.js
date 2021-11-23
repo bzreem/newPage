@@ -90,7 +90,7 @@ export default function shortCut() {
     }else if (e.target === $galleryFour || e.target === $infoFour || e.target.matches(".info-fourth-img article h3") || e.target.matches(".info-fourth-img article p")) {
       $galleryFour.classList.toggle("active-rotate");
       $infoFour.classList.toggle("active-img-information");
-    }else if (e.target === $galleryFive || e.target === $infoFive || e.target.matches(".info-fivth-img article h3") || e.target.matches(".info-fivth-img article p")) {
+    }else if (e.target === $galleryFive || e.target === $infoFive || e.target.matches(".info-fifth-img article h3") || e.target.matches(".info-fifth-img article p")) {
       $galleryFive.classList.toggle("active-rotate");
       $infoFive.classList.toggle("active-img-information");
     }else if (e.target === $gallerySix || e.target === $infoFSix || e.target.matches(".info-sixth-img article h3") || e.target.matches(".info-sixth-img article p")) {
